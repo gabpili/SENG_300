@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 public class HelloWorld{
 	public static void main(String[] args) {
-		System.println("Hello, World!");
+		Scanner input = new Scanner(System.in);
+		System.out.println("What is your name?");
+		
+		String name = input.nextLine();
+		System.out.println("Hello, " + name "!");
 	}
 }
 
